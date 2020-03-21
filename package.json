@@ -1,0 +1,44 @@
+{
+  "name": "android-db-tester",
+  "version": "0.0.1",
+  "description": "Use to database",
+  "productName": "Feedme Database Tester",
+  "cordovaId": "com.feedmepos.databasetester",
+  "capacitorId": "",
+  "author": "Lo King Wei <kiwi198@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "core-js": "2",
+    "object.entries": "^1.1.1",
+    "pouchdb": "^7.1.1",
+    "pouchdb-adapter-cordova-sqlite": "^2.0.7",
+    "pouchdb-debug": "^7.2.1",
+    "pouchdb-find": "^7.2.1",
+    "quasar": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "@quasar/app": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-vue": "^6.1.2"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ],
+  "resolutions": {
+    "@babel/parser": "7.7.5"
+  }
+}

@@ -1,0 +1,2986 @@
+
+ Dev mode.......... spa
+ Pkg quasar........ v1.9.3
+ Pkg @quasar/app... v1.5.8
+ Debugging......... enabled
+
+ app:quasar-conf Reading quasar.conf.js +0ms
+ app:webpack Extending SPA Webpack config +1s
+
+ app:inspect Showing Webpack config "Main" with depth of 10 +744ms
+
+{
+  mode: [32m'development'[39m,
+  devtool: [32m'#cheap-module-eval-source-map'[39m,
+  node: {
+    setImmediate: [33mfalse[39m,
+    process: [32m'mock'[39m,
+    dgram: [32m'empty'[39m,
+    fs: [32m'empty'[39m,
+    net: [32m'empty'[39m,
+    tls: [32m'empty'[39m,
+    child_process: [32m'empty'[39m
+  },
+  resolve: {
+    symlinks: [33mfalse[39m,
+    alias: {
+      src: [32m'C:\\project\\feedme-clean\\android-db-tester\\src'[39m,
+      app: [32m'C:\\project\\feedme-clean\\android-db-tester'[39m,
+      components: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\components'[39m,
+      layouts: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\layouts'[39m,
+      pages: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\pages'[39m,
+      assets: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\assets'[39m,
+      boot: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\boot'[39m
+    },
+    extensions: [
+      [32m'.js'[39m,
+      [32m'.vue'[39m,
+      [32m'.json'[39m,
+      [length]: [33m3[39m
+    ],
+    modules: [
+      [32m'node_modules'[39m,
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules'[39m,
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\node_modules'[39m,
+      [length]: [33m3[39m
+    ]
+  },
+  resolveLoader: {
+    modules: [
+      [32m'node_modules'[39m,
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules'[39m,
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\node_modules'[39m,
+      [length]: [33m3[39m
+    ]
+  },
+  module: {
+    noParse: /^(vue|vue-router|vuex|vuex-router-sync|@quasar[\\\/]extras)$/ {
+      [lastIndex]: [33m0[39m
+    },
+    rules: [
+      {
+        test: /\.vue$/ {
+          [lastIndex]: [33m0[39m
+        },
+        use: [
+          {
+            loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.auto-import.js'[39m,
+            options: [32m'kebab'[39m,
+            [__useName]: [32m'quasar-auto-import'[39m,
+            [__ruleNames]: [
+              [32m'vue'[39m,
+              [length]: [33m1[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [length]: [33m1[39m
+            ]
+          },
+          {
+            loader: [32m'vue-loader'[39m,
+            options: {
+              productionMode: [33mfalse[39m,
+              compilerOptions: {
+                preserveWhitespace: [33mfalse[39m
+              },
+              transformAssetUrls: {
+                video: [
+                  [32m'src'[39m,
+                  [32m'poster'[39m,
+                  [length]: [33m2[39m
+                ],
+                source: [32m'src'[39m,
+                img: [32m'src'[39m,
+                image: [
+                  [32m'xlink:href'[39m,
+                  [32m'href'[39m,
+                  [length]: [33m2[39m
+                ],
+                use: [
+                  [32m'xlink:href'[39m,
+                  [32m'href'[39m,
+                  [length]: [33m2[39m
+                ],
+                QCarouselSlide: [32m'img-src'[39m,
+                [32m'q-carousel-slide'[39m: [32m'img-src'[39m,
+                QChatMessage: [32m'avatar'[39m,
+                [32m'q-chat-message'[39m: [32m'avatar'[39m,
+                QImg: [
+                  [32m'src'[39m,
+                  [32m'placeholder-src'[39m,
+                  [length]: [33m2[39m
+                ],
+                [32m'q-img'[39m: [
+                  [32m'src'[39m,
+                  [32m'placeholder-src'[39m,
+                  [length]: [33m2[39m
+                ],
+                QParallax: [32m'src'[39m,
+                [32m'q-parallax'[39m: [32m'src'[39m,
+                QTimelineEntry: [32m'avatar'[39m,
+                [32m'q-timeline-entry'[39m: [32m'avatar'[39m
+              }
+            },
+            [__useName]: [32m'vue-loader'[39m,
+            [__ruleNames]: [
+              [32m'vue'[39m,
+              [length]: [33m1[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [length]: [33m1[39m
+            ]
+          },
+          [length]: [33m2[39m
+        ],
+        [__ruleNames]: [
+          [32m'vue'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.jsx?$/ {
+          [lastIndex]: [33m0[39m
+        },
+        exclude: [
+          [Function] {
+            [length]: [33m1[39m,
+            [name]: [32m''[39m
+          },
+          [length]: [33m1[39m
+        ],
+        use: [
+          {
+            loader: [32m'babel-loader'[39m,
+            options: {
+              compact: [33mfalse[39m,
+              extends: [32m'C:\\project\\feedme-clean\\android-db-tester\\babel.config.js'[39m,
+              plugins: [
+                [
+                  [32m'transform-imports'[39m,
+                  {
+                    quasar: {
+                      transform: [32m'quasar/dist/babel-transforms/imports.js'[39m,
+                      preventFullImport: [33mtrue[39m
+                    }
+                  },
+                  [length]: [33m2[39m
+                ],
+                [length]: [33m1[39m
+              ]
+            },
+            [__useName]: [32m'babel-loader'[39m,
+            [__ruleNames]: [
+              [32m'babel'[39m,
+              [length]: [33m1[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [length]: [33m1[39m
+            ]
+          },
+          [length]: [33m1[39m
+        ],
+        [__ruleNames]: [
+          [32m'babel'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/ {
+          [lastIndex]: [33m0[39m
+        },
+        use: [
+          {
+            loader: [32m'url-loader'[39m,
+            options: {
+              esModule: [33mfalse[39m,
+              limit: [33m10000[39m,
+              name: [32m'img/[name].[ext]'[39m
+            },
+            [__useName]: [32m'url-loader'[39m,
+            [__ruleNames]: [
+              [32m'images'[39m,
+              [length]: [33m1[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [length]: [33m1[39m
+            ]
+          },
+          [length]: [33m1[39m
+        ],
+        [__ruleNames]: [
+          [32m'images'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/ {
+          [lastIndex]: [33m0[39m
+        },
+        use: [
+          {
+            loader: [32m'url-loader'[39m,
+            options: {
+              esModule: [33mfalse[39m,
+              limit: [33m10000[39m,
+              name: [32m'fonts/[name].[ext]'[39m
+            },
+            [__useName]: [32m'url-loader'[39m,
+            [__ruleNames]: [
+              [32m'fonts'[39m,
+              [length]: [33m1[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [length]: [33m1[39m
+            ]
+          },
+          [length]: [33m1[39m
+        ],
+        [__ruleNames]: [
+          [32m'fonts'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/ {
+          [lastIndex]: [33m0[39m
+        },
+        use: [
+          {
+            loader: [32m'url-loader'[39m,
+            options: {
+              esModule: [33mfalse[39m,
+              limit: [33m10000[39m,
+              name: [32m'media/[name].[ext]'[39m
+            },
+            [__useName]: [32m'url-loader'[39m,
+            [__ruleNames]: [
+              [32m'media'[39m,
+              [length]: [33m1[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [length]: [33m1[39m
+            ]
+          },
+          [length]: [33m1[39m
+        ],
+        [__ruleNames]: [
+          [32m'media'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.css$/ {
+          [lastIndex]: [33m0[39m
+        },
+        oneOf: [
+          {
+            resourceQuery: /module/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m2[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m3[39m
+            ],
+            [__ruleNames]: [
+              [32m'css'[39m,
+              [32m'modules-query'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            test: /\.module\.\w+$/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m2[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m3[39m
+            ],
+            [__ruleNames]: [
+              [32m'css'[39m,
+              [32m'modules-ext'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m2[39m,
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'css'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m3[39m
+            ],
+            [__ruleNames]: [
+              [32m'css'[39m,
+              [32m'normal'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          [length]: [33m3[39m
+        ],
+        [__ruleNames]: [
+          [32m'css'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.styl(us)?$/ {
+          [lastIndex]: [33m0[39m
+        },
+        oneOf: [
+          {
+            resourceQuery: /module/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'stylus-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  preferPathResolver: [32m'webpack'[39m
+                },
+                [__useName]: [32m'stylus-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-stylus-variables'[39m,
+                [__useName]: [32m'quasar-stylus-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'stylus'[39m,
+              [32m'modules-query'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            test: /\.module\.\w+$/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'stylus-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  preferPathResolver: [32m'webpack'[39m
+                },
+                [__useName]: [32m'stylus-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-stylus-variables'[39m,
+                [__useName]: [32m'quasar-stylus-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'stylus'[39m,
+              [32m'modules-ext'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'stylus-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  preferPathResolver: [32m'webpack'[39m
+                },
+                [__useName]: [32m'stylus-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-stylus-variables'[39m,
+                [__useName]: [32m'quasar-stylus-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'stylus'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'stylus'[39m,
+              [32m'normal'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          [length]: [33m3[39m
+        ],
+        [__ruleNames]: [
+          [32m'stylus'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.scss$/ {
+          [lastIndex]: [33m0[39m
+        },
+        oneOf: [
+          {
+            resourceQuery: /module/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'sass-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  sassOptions: {
+                    outputStyle: [32m'nested'[39m
+                  }
+                },
+                [__useName]: [32m'sass-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-scss-variables'[39m,
+                [__useName]: [32m'quasar-scss-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'scss'[39m,
+              [32m'modules-query'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            test: /\.module\.\w+$/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'sass-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  sassOptions: {
+                    outputStyle: [32m'nested'[39m
+                  }
+                },
+                [__useName]: [32m'sass-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-scss-variables'[39m,
+                [__useName]: [32m'quasar-scss-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'scss'[39m,
+              [32m'modules-ext'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'sass-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  sassOptions: {
+                    outputStyle: [32m'nested'[39m
+                  }
+                },
+                [__useName]: [32m'sass-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-scss-variables'[39m,
+                [__useName]: [32m'quasar-scss-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'scss'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'scss'[39m,
+              [32m'normal'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          [length]: [33m3[39m
+        ],
+        [__ruleNames]: [
+          [32m'scss'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.sass$/ {
+          [lastIndex]: [33m0[39m
+        },
+        oneOf: [
+          {
+            resourceQuery: /module/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'sass-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  sassOptions: {
+                    indentedSyntax: [33mtrue[39m,
+                    outputStyle: [32m'nested'[39m
+                  }
+                },
+                [__useName]: [32m'sass-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-sass-variables'[39m,
+                [__useName]: [32m'quasar-sass-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'sass'[39m,
+              [32m'modules-query'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            test: /\.module\.\w+$/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'sass-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  sassOptions: {
+                    indentedSyntax: [33mtrue[39m,
+                    outputStyle: [32m'nested'[39m
+                  }
+                },
+                [__useName]: [32m'sass-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-sass-variables'[39m,
+                [__useName]: [32m'quasar-sass-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'sass'[39m,
+              [32m'modules-ext'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m4[39m,
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'sass-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  sassOptions: {
+                    indentedSyntax: [33mtrue[39m,
+                    outputStyle: [32m'nested'[39m
+                  }
+                },
+                [__useName]: [32m'sass-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\@quasar\\app\\lib\\webpack\\loader.quasar-sass-variables'[39m,
+                [__useName]: [32m'quasar-sass-variables-loader'[39m,
+                [__ruleNames]: [
+                  [32m'sass'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m5[39m
+            ],
+            [__ruleNames]: [
+              [32m'sass'[39m,
+              [32m'normal'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          [length]: [33m3[39m
+        ],
+        [__ruleNames]: [
+          [32m'sass'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        test: /\.less$/ {
+          [lastIndex]: [33m0[39m
+        },
+        oneOf: [
+          {
+            resourceQuery: /module/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m3[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'less-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'less-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-query'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m4[39m
+            ],
+            [__ruleNames]: [
+              [32m'less'[39m,
+              [32m'modules-query'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            test: /\.module\.\w+$/ {
+              [lastIndex]: [33m0[39m
+            },
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m3[39m,
+                  sourceMap: [33mtrue[39m,
+                  modules: {
+                    localIdentName: [32m'[name]_[local]_[hash:base64:5]'[39m
+                  }
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'less-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'less-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'modules-ext'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m4[39m
+            ],
+            [__ruleNames]: [
+              [32m'less'[39m,
+              [32m'modules-ext'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          {
+            use: [
+              {
+                loader: [32m'vue-style-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'vue-style-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'css-loader'[39m,
+                options: {
+                  importLoaders: [33m3[39m,
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'css-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'postcss-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m,
+                  plugins: [
+                    [Function: creator] {
+                      [length]: [33m0[39m,
+                      [name]: [32m'creator'[39m,
+                      [prototype]: [36m[creator][39m,
+                      [postcss]: [36m[Getter][39m,
+                      process: [36m[Function][39m,
+                      data: [36m[Object][39m,
+                      defaults: [36m[Array][39m,
+                      info: [36m[Function][39m
+                    },
+                    [length]: [33m1[39m
+                  ]
+                },
+                [__useName]: [32m'postcss-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              {
+                loader: [32m'less-loader'[39m,
+                options: {
+                  sourceMap: [33mtrue[39m
+                },
+                [__useName]: [32m'less-loader'[39m,
+                [__ruleNames]: [
+                  [32m'less'[39m,
+                  [32m'normal'[39m,
+                  [length]: [33m2[39m
+                ],
+                [__ruleTypes]: [
+                  [32m'rule'[39m,
+                  [32m'oneOf'[39m,
+                  [length]: [33m2[39m
+                ]
+              },
+              [length]: [33m4[39m
+            ],
+            [__ruleNames]: [
+              [32m'less'[39m,
+              [32m'normal'[39m,
+              [length]: [33m2[39m
+            ],
+            [__ruleTypes]: [
+              [32m'rule'[39m,
+              [32m'oneOf'[39m,
+              [length]: [33m2[39m
+            ]
+          },
+          [length]: [33m3[39m
+        ],
+        [__ruleNames]: [
+          [32m'less'[39m,
+          [length]: [33m1[39m
+        ],
+        [__ruleTypes]: [
+          [32m'rule'[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      {
+        enforce: [32m'pre'[39m,
+        test: /\.(js|vue)$/ {
+          [lastIndex]: [33m0[39m
+        },
+        loader: [32m'eslint-loader'[39m,
+        exclude: /node_modules/ {
+          [lastIndex]: [33m0[39m
+        },
+        options: {
+          formatter: [Function] {
+            [length]: [33m1[39m,
+            [name]: [32m''[39m,
+            [prototype]: {
+              [constructor]: [36m[Circular][39m
+            }
+          }
+        }
+      },
+      [length]: [33m11[39m
+    ]
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          name: [32m'vendor'[39m,
+          chunks: [32m'all'[39m,
+          priority: [33m-10[39m,
+          test: [Function] {
+            [length]: [33m1[39m,
+            [name]: [32m''[39m
+          }
+        },
+        common: {
+          name: [32m'chunk-common'[39m,
+          minChunks: [33m2[39m,
+          priority: [33m-20[39m,
+          chunks: [32m'all'[39m,
+          reuseExistingChunk: [33mtrue[39m
+        }
+      }
+    },
+    noEmitOnErrors: [33mtrue[39m,
+    namedModules: [33mtrue[39m
+  },
+  plugins: [
+    VueLoaderPlugin {
+      [__pluginName]: [32m'vue-loader'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        [length]: [33m0[39m
+      ],
+      [__pluginConstructorName]: [32m'VueLoaderPlugin'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    DefinePlugin {
+      definitions: {
+        [32m'process.env'[39m: {
+          NODE_ENV: [32m'"development"'[39m,
+          CLIENT: [33mtrue[39m,
+          SERVER: [33mfalse[39m,
+          DEV: [33mtrue[39m,
+          PROD: [33mfalse[39m,
+          MODE: [32m'"spa"'[39m,
+          VUE_ROUTER_MODE: [32m'"hash"'[39m,
+          VUE_ROUTER_BASE: [32m'""'[39m,
+          APP_URL: [32m'"http://localhost:8080"'[39m
+        }
+      },
+      [__pluginName]: [32m'define'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        {
+          [32m'process.env'[39m: {
+            NODE_ENV: [32m'"development"'[39m,
+            CLIENT: [33mtrue[39m,
+            SERVER: [33mfalse[39m,
+            DEV: [33mtrue[39m,
+            PROD: [33mfalse[39m,
+            MODE: [32m'"spa"'[39m,
+            VUE_ROUTER_MODE: [32m'"hash"'[39m,
+            VUE_ROUTER_BASE: [32m'""'[39m,
+            APP_URL: [32m'"http://localhost:8080"'[39m
+          }
+        },
+        [length]: [33m1[39m
+      ],
+      [__pluginConstructorName]: [32m'DefinePlugin'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    WebpackProgress {
+      profile: [33mfalse[39m,
+      handler: [Function: handler] {
+        [length]: [33m2[39m,
+        [name]: [32m'handler'[39m
+      },
+      modulesCount: [33m500[39m,
+      showEntries: [33mfalse[39m,
+      showModules: [33mtrue[39m,
+      showActiveModules: [33mtrue[39m,
+      opts: {
+        name: [32m'SPA'[39m
+      },
+      [__pluginName]: [32m'progress'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        {
+          name: [32m'SPA'[39m
+        },
+        [length]: [33m1[39m
+      ],
+      [__pluginConstructorName]: [32m'WebpackProgress'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    BootDefaultExport {
+      [__pluginName]: [32m'boot-default-export'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        [length]: [33m0[39m
+      ],
+      [__pluginConstructorName]: [32m'BootDefaultExport'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    FriendlyErrorsWebpackPlugin {
+      compilationSuccessInfo: {
+        notes: [
+          [32m'App dir........... '[39m +
+            [32m'C:\\project\\feedme-clean\\android-db-tester\n    App '[39m +
+            [32m'URL........... http://localhost:8080\n    Dev '[39m +
+            [32m'mode.......... spa\n    Pkg quasar........ v1.9.3\n '[39m +
+            [32m'   Pkg @quasar/app... v1.5.8\n  '[39m,
+          [length]: [33m1[39m
+        ]
+      },
+      onErrors: [90mundefined[39m,
+      shouldClearConsole: [33mtrue[39m,
+      formatters: [
+        [Function: format] {
+          [length]: [33m1[39m,
+          [name]: [32m'format'[39m,
+          [prototype]: format {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        [Function: format] {
+          [length]: [33m2[39m,
+          [name]: [32m'format'[39m,
+          [prototype]: format {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        [Function: format] {
+          [length]: [33m2[39m,
+          [name]: [32m'format'[39m,
+          [prototype]: format {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        [length]: [33m3[39m
+      ],
+      transformers: [
+        [Function: transform] {
+          [length]: [33m1[39m,
+          [name]: [32m'transform'[39m,
+          [prototype]: transform {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        [Function: transform] {
+          [length]: [33m1[39m,
+          [name]: [32m'transform'[39m,
+          [prototype]: transform {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        [Function: transform] {
+          [length]: [33m1[39m,
+          [name]: [32m'transform'[39m,
+          [prototype]: transform {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        [length]: [33m3[39m
+      ],
+      [__pluginName]: [32m'friendly-errors'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        {
+          clearConsole: [33mtrue[39m,
+          compilationSuccessInfo: {
+            notes: [
+              [32m'App dir........... '[39m +
+                [32m'C:\\project\\feedme-clean\\android-db-tester\n'[39m +
+                [32m'    App URL........... '[39m +
+                [32m'http://localhost:8080\n    Dev '[39m +
+                [32m'mode.......... spa\n    Pkg '[39m +
+                [32m'quasar........ v1.9.3\n    Pkg '[39m +
+                [32m'@quasar/app... v1.5.8\n  '[39m,
+              [length]: [33m1[39m
+            ]
+          }
+        },
+        [length]: [33m1[39m
+      ],
+      [__pluginConstructorName]: [32m'FriendlyErrorsWebpackPlugin'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    HtmlWebpackPlugin {
+      options: {
+        template: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\index.template.html'[39m,
+        templateParameters: [Function: templateParametersGenerator] {
+          [length]: [33m3[39m,
+          [name]: [32m'templateParametersGenerator'[39m,
+          [prototype]: templateParametersGenerator {
+            [constructor]: [36m[Circular][39m
+          }
+        },
+        filename: [32m'index.html'[39m,
+        hash: [33mfalse[39m,
+        inject: [33mtrue[39m,
+        compile: [33mtrue[39m,
+        favicon: [33mfalse[39m,
+        minify: [90mundefined[39m,
+        cache: [33mtrue[39m,
+        showErrors: [33mtrue[39m,
+        chunks: [32m'all'[39m,
+        excludeChunks: [
+          [length]: [33m0[39m
+        ],
+        chunksSortMode: [32m'none'[39m,
+        meta: {},
+        title: [32m'Webpack App'[39m,
+        xhtml: [33mfalse[39m,
+        ctx: {
+          dev: [33mtrue[39m,
+          prod: [33mfalse[39m,
+          mode: {
+            spa: [33mtrue[39m
+          },
+          modeName: [32m'spa'[39m,
+          target: {},
+          targetName: [90mundefined[39m,
+          emulator: [90mundefined[39m,
+          arch: {},
+          archName: [90mundefined[39m,
+          bundler: {},
+          bundlerName: [90mundefined[39m,
+          debug: [33mfalse[39m,
+          publish: [90mundefined[39m,
+          vueDevtools: [33mfalse[39m
+        },
+        process: {
+          env: {
+            NODE_ENV: [32m'development'[39m,
+            CLIENT: [33mtrue[39m,
+            SERVER: [33mfalse[39m,
+            DEV: [33mtrue[39m,
+            PROD: [33mfalse[39m,
+            MODE: [32m'spa'[39m,
+            VUE_ROUTER_MODE: [32m'hash'[39m,
+            VUE_ROUTER_BASE: [32m''[39m,
+            APP_URL: [32m'http://localhost:8080'[39m
+          }
+        },
+        productName: [32m'Feedme Database Tester'[39m,
+        productDescription: [32m'Use to database'[39m
+      },
+      [__pluginName]: [32m'html-webpack'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        {
+          ctx: {
+            dev: [33mtrue[39m,
+            prod: [33mfalse[39m,
+            mode: {
+              spa: [33mtrue[39m
+            },
+            modeName: [32m'spa'[39m,
+            target: {},
+            targetName: [90mundefined[39m,
+            emulator: [90mundefined[39m,
+            arch: {},
+            archName: [90mundefined[39m,
+            bundler: {},
+            bundlerName: [90mundefined[39m,
+            debug: [33mfalse[39m,
+            publish: [90mundefined[39m,
+            vueDevtools: [33mfalse[39m
+          },
+          process: {
+            env: {
+              NODE_ENV: [32m'development'[39m,
+              CLIENT: [33mtrue[39m,
+              SERVER: [33mfalse[39m,
+              DEV: [33mtrue[39m,
+              PROD: [33mfalse[39m,
+              MODE: [32m'spa'[39m,
+              VUE_ROUTER_MODE: [32m'hash'[39m,
+              VUE_ROUTER_BASE: [32m''[39m,
+              APP_URL: [32m'http://localhost:8080'[39m
+            }
+          },
+          productName: [32m'Feedme Database Tester'[39m,
+          productDescription: [32m'Use to database'[39m,
+          filename: [32m'index.html'[39m,
+          template: [32m'C:\\project\\feedme-clean\\android-db-tester\\src\\index.template.html'[39m,
+          minify: [90mundefined[39m,
+          chunksSortMode: [32m'none'[39m,
+          inject: [33mtrue[39m,
+          cache: [33mtrue[39m
+        },
+        [length]: [33m1[39m
+      ],
+      [__pluginConstructorName]: [32m'HtmlWebpackPlugin'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    HtmlAddonsPlugin {
+      cfg: {
+        ctx: {
+          dev: [33mtrue[39m,
+          prod: [33mfalse[39m,
+          mode: {
+            spa: [33mtrue[39m
+          },
+          modeName: [32m'spa'[39m,
+          target: {},
+          targetName: [90mundefined[39m,
+          emulator: [90mundefined[39m,
+          arch: {},
+          archName: [90mundefined[39m,
+          bundler: {},
+          bundlerName: [90mundefined[39m,
+          debug: [33mfalse[39m,
+          publish: [90mundefined[39m,
+          vueDevtools: [33mfalse[39m
+        },
+        css: [
+          {
+            path: [32m'src/css/app.sass'[39m
+          },
+          [length]: [33m1[39m
+        ],
+        boot: [
+          [length]: [33m0[39m
+        ],
+        vendor: {
+          add: [90mundefined[39m,
+          remove: [90mundefined[39m
+        },
+        build: {
+          transformAssetUrls: {
+            video: [
+              [32m'src'[39m,
+              [32m'poster'[39m,
+              [length]: [33m2[39m
+            ],
+            source: [32m'src'[39m,
+            img: [32m'src'[39m,
+            image: [
+              [32m'xlink:href'[39m,
+              [32m'href'[39m,
+              [length]: [33m2[39m
+            ],
+            use: [
+              [32m'xlink:href'[39m,
+              [32m'href'[39m,
+              [length]: [33m2[39m
+            ],
+            QCarouselSlide: [32m'img-src'[39m,
+            [32m'q-carousel-slide'[39m: [32m'img-src'[39m,
+            QChatMessage: [32m'avatar'[39m,
+            [32m'q-chat-message'[39m: [32m'avatar'[39m,
+            QImg: [
+              [32m'src'[39m,
+              [32m'placeholder-src'[39m,
+              [length]: [33m2[39m
+            ],
+            [32m'q-img'[39m: [
+              [32m'src'[39m,
+              [32m'placeholder-src'[39m,
+              [length]: [33m2[39m
+            ],
+            QParallax: [32m'src'[39m,
+            [32m'q-parallax'[39m: [32m'src'[39m,
+            QTimelineEntry: [32m'avatar'[39m,
+            [32m'q-timeline-entry'[39m: [32m'avatar'[39m
+          },
+          showProgress: [33mtrue[39m,
+          scopeHoisting: [33mtrue[39m,
+          productName: [32m'Feedme Database Tester'[39m,
+          productDescription: [32m'Use to database'[39m,
+          extractCSS: [33mfalse[39m,
+          sourceMap: [33mtrue[39m,
+          minify: [33mfalse[39m,
+          distDir: [32m'C:\\project\\feedme-clean\\android-db-tester\\dist\\spa'[39m,
+          htmlFilename: [32m'index.html'[39m,
+          webpackManifest: [33mfalse[39m,
+          vueRouterMode: [32m'hash'[39m,
+          preloadChunks: [33mfalse[39m,
+          forceDevPublicPath: [33mfalse[39m,
+          devtool: [32m'#cheap-module-eval-source-map'[39m,
+          env: {
+            [32m'process.env'[39m: {
+              NODE_ENV: [32m'"development"'[39m,
+              CLIENT: [33mtrue[39m,
+              SERVER: [33mfalse[39m,
+              DEV: [33mtrue[39m,
+              PROD: [33mfalse[39m,
+              MODE: [32m'"spa"'[39m,
+              VUE_ROUTER_MODE: [32m'"hash"'[39m,
+              VUE_ROUTER_BASE: [32m'""'[39m,
+              APP_URL: [32m'"http://localhost:8080"'[39m
+            }
+          },
+          uglifyOptions: {
+            compress: {
+              arrows: [33mfalse[39m,
+              collapse_vars: [33mfalse[39m,
+              comparisons: [33mfalse[39m,
+              computed_props: [33mfalse[39m,
+              hoist_funs: [33mfalse[39m,
+              hoist_props: [33mfalse[39m,
+              hoist_vars: [33mfalse[39m,
+              inline: [33mfalse[39m,
+              loops: [33mfalse[39m,
+              negate_iife: [33mfalse[39m,
+              properties: [33mfalse[39m,
+              reduce_funcs: [33mfalse[39m,
+              reduce_vars: [33mfalse[39m,
+              switches: [33mfalse[39m,
+              toplevel: [33mfalse[39m,
+              typeofs: [33mfalse[39m,
+              booleans: [33mtrue[39m,
+              if_return: [33mtrue[39m,
+              sequences: [33mtrue[39m,
+              unused: [33mtrue[39m,
+              conditionals: [33mtrue[39m,
+              dead_code: [33mtrue[39m,
+              evaluate: [33mtrue[39m
+            },
+            mangle: {
+              safari10: [33mtrue[39m
+            }
+          },
+          transpileDependencies: [
+            [length]: [33m0[39m
+          ],
+          stylusLoaderOptions: {},
+          sassLoaderOptions: {},
+          scssLoaderOptions: {},
+          lessLoaderOptions: {},
+          gzip: [33mfalse[39m,
+          analyze: [33mfalse[39m,
+          extendWebpack: [Function: extendWebpack] {
+            [length]: [33m1[39m,
+            [name]: [32m'extendWebpack'[39m
+          },
+          publicPath: [32m''[39m,
+          vueRouterBase: [32m''[39m,
+          appBase: [32m''[39m,
+          APP_URL: [32m'http://localhost:8080'[39m
+        },
+        devServer: {
+          publicPath: [32m''[39m,
+          hot: [33mtrue[39m,
+          inline: [33mtrue[39m,
+          overlay: [33mtrue[39m,
+          quiet: [33mtrue[39m,
+          historyApiFallback: [33mtrue[39m,
+          noInfo: [33mtrue[39m,
+          disableHostCheck: [33mtrue[39m,
+          compress: [33mtrue[39m,
+          open: [33mfalse[39m,
+          https: [33mfalse[39m,
+          port: [33m8080[39m,
+          host: [32m'0.0.0.0'[39m,
+          contentBase: [33mfalse[39m,
+          watchContentBase: [33mfalse[39m,
+          before: [Function: before] {
+            [length]: [33m1[39m,
+            [name]: [32m'before'[39m
+          }
+        },
+        animations: [
+          [length]: [33m0[39m
+        ],
+        extras: [
+          [32m'roboto-font'[39m,
+          [32m'material-icons'[39m,
+          [length]: [33m2[39m
+        ],
+        sourceFiles: {
+          rootComponent: [32m'src/App.vue'[39m,
+          router: [32m'src/router/index'[39m,
+          store: [32m'src/store/index'[39m,
+          indexHtmlTemplate: [32m'src/index.template.html'[39m,
+          registerServiceWorker: [32m'src-pwa/register-service-worker.js'[39m,
+          serviceWorker: [32m'src-pwa/custom-service-worker.js'[39m,
+          electronMainDev: [32m'src-electron/main-process/electron-main.dev.js'[39m,
+          electronMainProd: [32m'src-electron/main-process/electron-main.js'[39m,
+          ssrServerIndex: [32m'src-ssr/index.js'[39m
+        },
+        ssr: {
+          componentCache: {},
+          pwa: [33mfalse[39m
+        },
+        pwa: {
+          workboxOptions: {},
+          manifest: {
+            icons: [
+              {
+                src: [32m'statics/icons/icon-128x128.png'[39m,
+                sizes: [32m'128x128'[39m,
+                type: [32m'image/png'[39m
+              },
+              {
+                src: [32m'statics/icons/icon-192x192.png'[39m,
+                sizes: [32m'192x192'[39m,
+                type: [32m'image/png'[39m
+              },
+              {
+                src: [32m'statics/icons/icon-256x256.png'[39m,
+                sizes: [32m'256x256'[39m,
+                type: [32m'image/png'[39m
+              },
+              {
+                src: [32m'statics/icons/icon-384x384.png'[39m,
+                sizes: [32m'384x384'[39m,
+                type: [32m'image/png'[39m
+              },
+              {
+                src: [32m'statics/icons/icon-512x512.png'[39m,
+                sizes: [32m'512x512'[39m,
+                type: [32m'image/png'[39m
+              },
+              [length]: [33m5[39m
+            ],
+            name: [32m'Feedme Database Tester'[39m,
+            short_name: [32m'Feedme Database Tester'[39m,
+            description: [32m'Use to database'[39m,
+            display: [32m'standalone'[39m,
+            orientation: [32m'portrait'[39m,
+            background_color: [32m'#ffffff'[39m,
+            theme_color: [32m'#027be3'[39m
+          },
+          metaVariables: {},
+          workboxPluginMode: [32m'GenerateSW'[39m
+        },
+        electron: {
+          unPackagedInstallParams: [
+            [length]: [33m0[39m
+          ],
+          packager: {},
+          builder: {
+            appId: [32m'android-db-tester'[39m
+          },
+          bundler: [32m'packager'[39m,
+          nodeIntegration: [33mtrue[39m,
+          extendWebpack: [Function: extendWebpack] {
+            [length]: [33m1[39m,
+            [name]: [32m'extendWebpack'[39m
+          }
+        },
+        cordova: {
+          id: [32m'com.feedmepos.databasetester'[39m
+        },
+        capacitor: {
+          hideSplashscreen: [33mtrue[39m
+        },
+        bin: {},
+        htmlVariables: {},
+        framework: {
+          iconSet: [32m'material-icons'[39m,
+          lang: [32m'en-us'[39m,
+          all: [32m'auto'[39m,
+          components: [
+            [length]: [33m0[39m
+          ],
+          directives: [
+            [length]: [33m0[39m
+          ],
+          plugins: [
+            [length]: [33m0[39m
+          ],
+          config: {},
+          autoImportComponentCase: [32m'kebab'[39m
+        },
+        supportIE: [33mtrue[39m,
+        __needsAppMountHook: [33mfalse[39m,
+        __vueDevtools: [33mfalse[39m,
+        __loadingBar: [33mfalse[39m,
+        __meta: [33mfalse[39m,
+        store: [33mfalse[39m,
+        preFetch: [33mfalse[39m,
+        __devServer: {},
+        __html: {
+          variables: {
+            ctx: {
+              dev: [33mtrue[39m,
+              prod: [33mfalse[39m,
+              mode: {
+                spa: [33mtrue[39m
+              },
+              modeName: [32m'spa'[39m,
+              target: {},
+              targetName: [90mundefined[39m,
+              emulator: [90mundefined[39m,
+              arch: {},
+              archName: [90mundefined[39m,
+              bundler: {},
+              bundlerName: [90mundefined[39m,
+              debug: [33mfalse[39m,
+              publish: [90mundefined[39m,
+              vueDevtools: [33mfalse[39m
+            },
+            process: {
+              env: {
+                NODE_ENV: [32m'development'[39m,
+                CLIENT: [33mtrue[39m,
+                SERVER: [33mfalse[39m,
+                DEV: [33mtrue[39m,
+                PROD: [33mfalse[39m,
+                MODE: [32m'spa'[39m,
+                VUE_ROUTER_MODE: [32m'hash'[39m,
+                VUE_ROUTER_BASE: [32m''[39m,
+                APP_URL: [32m'http://localhost:8080'[39m
+              }
+            },
+            productName: [32m'Feedme Database Tester'[39m,
+            productDescription: [32m'Use to database'[39m
+          },
+          minifyOptions: [90mundefined[39m
+        },
+        __css: {
+          quasarSrcExt: [32m'sass'[39m
+        }
+      },
+      [__pluginName]: [32m'html-addons'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        {
+          ctx: {
+            dev: [33mtrue[39m,
+            prod: [33mfalse[39m,
+            mode: {
+              spa: [33mtrue[39m
+            },
+            modeName: [32m'spa'[39m,
+            target: {},
+            targetName: [90mundefined[39m,
+            emulator: [90mundefined[39m,
+            arch: {},
+            archName: [90mundefined[39m,
+            bundler: {},
+            bundlerName: [90mundefined[39m,
+            debug: [33mfalse[39m,
+            publish: [90mundefined[39m,
+            vueDevtools: [33mfalse[39m
+          },
+          css: [
+            {
+              path: [32m'src/css/app.sass'[39m
+            },
+            [length]: [33m1[39m
+          ],
+          boot: [
+            [length]: [33m0[39m
+          ],
+          vendor: {
+            add: [90mundefined[39m,
+            remove: [90mundefined[39m
+          },
+          build: {
+            transformAssetUrls: {
+              video: [
+                [32m'src'[39m,
+                [32m'poster'[39m,
+                [length]: [33m2[39m
+              ],
+              source: [32m'src'[39m,
+              img: [32m'src'[39m,
+              image: [
+                [32m'xlink:href'[39m,
+                [32m'href'[39m,
+                [length]: [33m2[39m
+              ],
+              use: [
+                [32m'xlink:href'[39m,
+                [32m'href'[39m,
+                [length]: [33m2[39m
+              ],
+              QCarouselSlide: [32m'img-src'[39m,
+              [32m'q-carousel-slide'[39m: [32m'img-src'[39m,
+              QChatMessage: [32m'avatar'[39m,
+              [32m'q-chat-message'[39m: [32m'avatar'[39m,
+              QImg: [
+                [32m'src'[39m,
+                [32m'placeholder-src'[39m,
+                [length]: [33m2[39m
+              ],
+              [32m'q-img'[39m: [
+                [32m'src'[39m,
+                [32m'placeholder-src'[39m,
+                [length]: [33m2[39m
+              ],
+              QParallax: [32m'src'[39m,
+              [32m'q-parallax'[39m: [32m'src'[39m,
+              QTimelineEntry: [32m'avatar'[39m,
+              [32m'q-timeline-entry'[39m: [32m'avatar'[39m
+            },
+            showProgress: [33mtrue[39m,
+            scopeHoisting: [33mtrue[39m,
+            productName: [32m'Feedme Database Tester'[39m,
+            productDescription: [32m'Use to database'[39m,
+            extractCSS: [33mfalse[39m,
+            sourceMap: [33mtrue[39m,
+            minify: [33mfalse[39m,
+            distDir: [32m'C:\\project\\feedme-clean\\android-db-tester\\dist\\spa'[39m,
+            htmlFilename: [32m'index.html'[39m,
+            webpackManifest: [33mfalse[39m,
+            vueRouterMode: [32m'hash'[39m,
+            preloadChunks: [33mfalse[39m,
+            forceDevPublicPath: [33mfalse[39m,
+            devtool: [32m'#cheap-module-eval-source-map'[39m,
+            env: {
+              [32m'process.env'[39m: {
+                NODE_ENV: [32m'"development"'[39m,
+                CLIENT: [33mtrue[39m,
+                SERVER: [33mfalse[39m,
+                DEV: [33mtrue[39m,
+                PROD: [33mfalse[39m,
+                MODE: [32m'"spa"'[39m,
+                VUE_ROUTER_MODE: [32m'"hash"'[39m,
+                VUE_ROUTER_BASE: [32m'""'[39m,
+                APP_URL: [32m'"http://localhost:8080"'[39m
+              }
+            },
+            uglifyOptions: {
+              compress: {
+                arrows: [33mfalse[39m,
+                collapse_vars: [33mfalse[39m,
+                comparisons: [33mfalse[39m,
+                computed_props: [33mfalse[39m,
+                hoist_funs: [33mfalse[39m,
+                hoist_props: [33mfalse[39m,
+                hoist_vars: [33mfalse[39m,
+                inline: [33mfalse[39m,
+                loops: [33mfalse[39m,
+                negate_iife: [33mfalse[39m,
+                properties: [33mfalse[39m,
+                reduce_funcs: [33mfalse[39m,
+                reduce_vars: [33mfalse[39m,
+                switches: [33mfalse[39m,
+                toplevel: [33mfalse[39m,
+                typeofs: [33mfalse[39m,
+                booleans: [33mtrue[39m,
+                if_return: [33mtrue[39m,
+                sequences: [33mtrue[39m,
+                unused: [33mtrue[39m,
+                conditionals: [33mtrue[39m,
+                dead_code: [33mtrue[39m,
+                evaluate: [33mtrue[39m
+              },
+              mangle: {
+                safari10: [33mtrue[39m
+              }
+            },
+            transpileDependencies: [
+              [length]: [33m0[39m
+            ],
+            stylusLoaderOptions: {},
+            sassLoaderOptions: {},
+            scssLoaderOptions: {},
+            lessLoaderOptions: {},
+            gzip: [33mfalse[39m,
+            analyze: [33mfalse[39m,
+            extendWebpack: [Function: extendWebpack] {
+              [length]: [33m1[39m,
+              [name]: [32m'extendWebpack'[39m
+            },
+            publicPath: [32m''[39m,
+            vueRouterBase: [32m''[39m,
+            appBase: [32m''[39m,
+            APP_URL: [32m'http://localhost:8080'[39m
+          },
+          devServer: {
+            publicPath: [32m''[39m,
+            hot: [33mtrue[39m,
+            inline: [33mtrue[39m,
+            overlay: [33mtrue[39m,
+            quiet: [33mtrue[39m,
+            historyApiFallback: [33mtrue[39m,
+            noInfo: [33mtrue[39m,
+            disableHostCheck: [33mtrue[39m,
+            compress: [33mtrue[39m,
+            open: [33mfalse[39m,
+            https: [33mfalse[39m,
+            port: [33m8080[39m,
+            host: [32m'0.0.0.0'[39m,
+            contentBase: [33mfalse[39m,
+            watchContentBase: [33mfalse[39m,
+            before: [Function: before] {
+              [length]: [33m1[39m,
+              [name]: [32m'before'[39m
+            }
+          },
+          animations: [
+            [length]: [33m0[39m
+          ],
+          extras: [
+            [32m'roboto-font'[39m,
+            [32m'material-icons'[39m,
+            [length]: [33m2[39m
+          ],
+          sourceFiles: {
+            rootComponent: [32m'src/App.vue'[39m,
+            router: [32m'src/router/index'[39m,
+            store: [32m'src/store/index'[39m,
+            indexHtmlTemplate: [32m'src/index.template.html'[39m,
+            registerServiceWorker: [32m'src-pwa/register-service-worker.js'[39m,
+            serviceWorker: [32m'src-pwa/custom-service-worker.js'[39m,
+            electronMainDev: [32m'src-electron/main-process/electron-main.dev.js'[39m,
+            electronMainProd: [32m'src-electron/main-process/electron-main.js'[39m,
+            ssrServerIndex: [32m'src-ssr/index.js'[39m
+          },
+          ssr: {
+            componentCache: {},
+            pwa: [33mfalse[39m
+          },
+          pwa: {
+            workboxOptions: {},
+            manifest: {
+              icons: [
+                {
+                  src: [32m'statics/icons/icon-128x128.png'[39m,
+                  sizes: [32m'128x128'[39m,
+                  type: [32m'image/png'[39m
+                },
+                {
+                  src: [32m'statics/icons/icon-192x192.png'[39m,
+                  sizes: [32m'192x192'[39m,
+                  type: [32m'image/png'[39m
+                },
+                {
+                  src: [32m'statics/icons/icon-256x256.png'[39m,
+                  sizes: [32m'256x256'[39m,
+                  type: [32m'image/png'[39m
+                },
+                {
+                  src: [32m'statics/icons/icon-384x384.png'[39m,
+                  sizes: [32m'384x384'[39m,
+                  type: [32m'image/png'[39m
+                },
+                {
+                  src: [32m'statics/icons/icon-512x512.png'[39m,
+                  sizes: [32m'512x512'[39m,
+                  type: [32m'image/png'[39m
+                },
+                [length]: [33m5[39m
+              ],
+              name: [32m'Feedme Database Tester'[39m,
+              short_name: [32m'Feedme Database Tester'[39m,
+              description: [32m'Use to database'[39m,
+              display: [32m'standalone'[39m,
+              orientation: [32m'portrait'[39m,
+              background_color: [32m'#ffffff'[39m,
+              theme_color: [32m'#027be3'[39m
+            },
+            metaVariables: {},
+            workboxPluginMode: [32m'GenerateSW'[39m
+          },
+          electron: {
+            unPackagedInstallParams: [
+              [length]: [33m0[39m
+            ],
+            packager: {},
+            builder: {
+              appId: [32m'android-db-tester'[39m
+            },
+            bundler: [32m'packager'[39m,
+            nodeIntegration: [33mtrue[39m,
+            extendWebpack: [Function: extendWebpack] {
+              [length]: [33m1[39m,
+              [name]: [32m'extendWebpack'[39m
+            }
+          },
+          cordova: {
+            id: [32m'com.feedmepos.databasetester'[39m
+          },
+          capacitor: {
+            hideSplashscreen: [33mtrue[39m
+          },
+          bin: {},
+          htmlVariables: {},
+          framework: {
+            iconSet: [32m'material-icons'[39m,
+            lang: [32m'en-us'[39m,
+            all: [32m'auto'[39m,
+            components: [
+              [length]: [33m0[39m
+            ],
+            directives: [
+              [length]: [33m0[39m
+            ],
+            plugins: [
+              [length]: [33m0[39m
+            ],
+            config: {},
+            autoImportComponentCase: [32m'kebab'[39m
+          },
+          supportIE: [33mtrue[39m,
+          __needsAppMountHook: [33mfalse[39m,
+          __vueDevtools: [33mfalse[39m,
+          __loadingBar: [33mfalse[39m,
+          __meta: [33mfalse[39m,
+          store: [33mfalse[39m,
+          preFetch: [33mfalse[39m,
+          __devServer: {},
+          __html: {
+            variables: {
+              ctx: {
+                dev: [33mtrue[39m,
+                prod: [33mfalse[39m,
+                mode: {
+                  spa: [33mtrue[39m
+                },
+                modeName: [32m'spa'[39m,
+                target: {},
+                targetName: [90mundefined[39m,
+                emulator: [90mundefined[39m,
+                arch: {},
+                archName: [90mundefined[39m,
+                bundler: {},
+                bundlerName: [90mundefined[39m,
+                debug: [33mfalse[39m,
+                publish: [90mundefined[39m,
+                vueDevtools: [33mfalse[39m
+              },
+              process: {
+                env: {
+                  NODE_ENV: [32m'development'[39m,
+                  CLIENT: [33mtrue[39m,
+                  SERVER: [33mfalse[39m,
+                  DEV: [33mtrue[39m,
+                  PROD: [33mfalse[39m,
+                  MODE: [32m'spa'[39m,
+                  VUE_ROUTER_MODE: [32m'hash'[39m,
+                  VUE_ROUTER_BASE: [32m''[39m,
+                  APP_URL: [32m'http://localhost:8080'[39m
+                }
+              },
+              productName: [32m'Feedme Database Tester'[39m,
+              productDescription: [32m'Use to database'[39m
+            },
+            minifyOptions: [90mundefined[39m
+          },
+          __css: {
+            quasarSrcExt: [32m'sass'[39m
+          }
+        },
+        [length]: [33m1[39m
+      ],
+      [__pluginConstructorName]: [32m'HtmlAddonsPlugin'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    HotModuleReplacementPlugin {
+      options: {},
+      multiStep: [90mundefined[39m,
+      fullBuildTimeout: [33m200[39m,
+      requestTimeout: [33m10000[39m,
+      [__pluginName]: [32m'hot-module-replacement'[39m,
+      [__pluginType]: [32m'plugin'[39m,
+      [__pluginArgs]: [
+        [length]: [33m0[39m
+      ],
+      [__pluginConstructorName]: [32m'HotModuleReplacementPlugin'[39m,
+      [__pluginPath]: [1mnull[22m
+    },
+    [length]: [33m8[39m
+  ],
+  performance: {
+    hints: [33mfalse[39m,
+    maxAssetSize: [33m500000[39m
+  },
+  entry: {
+    app: [
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\webpack-dev-server\\client\\index.js?http://0.0.0.0:8080'[39m,
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\node_modules\\webpack\\hot\\dev-server.js'[39m,
+      [32m'C:\\project\\feedme-clean\\android-db-tester\\.quasar\\client-entry.js'[39m,
+      [length]: [33m3[39m
+    ]
+  }
+}
+
+  Depth used: 10. You can change it with "-d" parameter.
+
