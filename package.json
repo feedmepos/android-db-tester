@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Use to database",
   "productName": "Feedme Database Tester",
-  "cordovaId": "com.feedmepos.databasetester",
+  "cordovaId": "com.feedmepos.sandboxandroiddb",
   "capacitorId": "",
   "author": "Lo King Wei <kiwi198@gmail.com>",
   "private": true,
